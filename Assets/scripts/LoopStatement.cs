@@ -33,8 +33,8 @@ namespace XBlocks.Utils
      
                 for (int i = 0; i < cycle; i++)
                 {
-                    ExecutionEnvironment current = new ExecutionEnvironment(enviroment);
-                    var cx = Body.Execute(current);
+                    //ExecutionEnvironment current = new ExecutionEnvironment(enviroment);
+                    var cx = Body.Execute(enviroment);
                    
                     if (cx.Type == TerminalType.Break)
                     {

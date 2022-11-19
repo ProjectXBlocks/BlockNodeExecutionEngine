@@ -31,7 +31,8 @@ namespace XBlocks.Utils
             if (Left is IAssignment)
             {
                 if (Operator == AssignmentOperator.Equal)
-                { 
+                {
+                    
                     return (Left as IAssignment).Assign(enviroment, right.ReturnValue);
                 }
             }

@@ -47,15 +47,15 @@ namespace XBlocks.Utils
                 {
                     if (Consequent == null)
                         return Terminal.Void;
-                    ExecutionEnvironment current = new ExecutionEnvironment(enviroment);
-                    return Consequent.Execute(current);
+                    //ExecutionEnvironment current = new ExecutionEnvironment(enviroment);
+                    return Consequent.Execute(enviroment);
                 }
                 else
                 {
                     if (Alternate == null)
                         return Terminal.Void;
-                    ExecutionEnvironment current = new ExecutionEnvironment(enviroment);
-                    return Alternate.Execute(current);
+                    //ExecutionEnvironment current = new ExecutionEnvironment(enviroment);
+                    return Alternate.Execute(enviroment);
                 }
             }
 

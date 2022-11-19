@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace XBlocks.Utils
 {
@@ -29,8 +30,10 @@ namespace XBlocks.Utils
         }
 
         public Terminal Assign(ExecutionEnvironment environment, object value)
-        {   
+        {
+            Debug.Log("Assign ");
             environment.SetValue(Variable, value);
+            Debug.Log(environment.GetValue("c"));
             return new Terminal(value);
         }
 

@@ -25,13 +25,7 @@ namespace XBlocks.Utils
             IConvertible value = s.Execute(e).ReturnValue as IConvertible;
             Debug.Log(value);
             var v = value.ToInt32(null);
-            Debug.Assert(v == 6);
-
-            e.SetValue("b", true);
-
-            IConvertible newV = s.Execute(e).ReturnValue as IConvertible;
-            var V = newV.ToInt32(null);
-            Debug.Assert(V == 6);*/
+            Debug.Assert(v == 6);*/
 
             ExecutionEnvironment e = new ExecutionEnvironment(null);
             e.RegisterValue("a", true);
